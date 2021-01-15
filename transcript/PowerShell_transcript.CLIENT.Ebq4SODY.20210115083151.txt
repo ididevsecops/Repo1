@@ -1,0 +1,1093 @@
+**********************
+PowerShell transcript start
+Start time: 20210115083151
+Username: CLIENT\backdoor
+RunAs User: CLIENT\backdoor
+Configuration Name: 
+Machine: CLIENT (Microsoft Windows NT 10.0.19042.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\backdoor\.vscode\extensions\ms-vscode.powershell-2020.6.0\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2020.6.0' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'c:\Users\backdoor\.vscode\extensions\ms-vscode.powershell-2020.6.0\modules' -EnableConsoleRepl -StartupBanner "=====> PowerShell Integrated Console v2020.6.0 <=====
+" -LogLevel 'Normal' -LogPath 'c:\Users\backdoor\.vscode\extensions\ms-vscode.powershell-2020.6.0\logs\1610716199-bda170fd-a1fc-4baf-ba8e-5ea23ec0ac031610716189131\EditorServices.log' -SessionDetailsPath 'c:\Users\backdoor\.vscode\extensions\ms-vscode.powershell-2020.6.0\sessions\PSES-VSCode-9856-368989' -FeatureFlags @() 
+Process ID: 11504
+PSVersion: 7.1.1
+PSEdition: Core
+GitCommitId: 7.1.1
+OS: Microsoft Windows 10.0.19042
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.10032.0, 6.0.0, 6.1.0, 6.2.0, 7.0.0, 7.1.1
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Users\backdoor\source\repos\ididevsecops\Repo1\transcript\PowerShell_transcript.CLIENT.Ebq4SODY.20210115083151.txt
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  main ≣ +2 ~0 -0 !
+
+[120G
+[08:31]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  main ≣ +2 ~0 -0 !
+
+[120G
+[08:31]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>git branch cloudshell
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  main ≣ +2 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>git checkout cloudshell
+Switched to branch 'cloudshell'
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +2 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +2 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>git stage .\azure\*
+warning: LF will be replaced by CRLF in azure/shared.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in azure/shared.parameters.corp-idso-000.json.
+The file will have its original line endings in your working directory
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +2 ~0 -0 | +1 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>git commit -m "Initial CloudShell ARM Template"
+[cloudshell b97361c] Initial CloudShell ARM Template
+ 2 files changed, 141 insertions(+)
+ create mode 100644 azure/shared.json
+ create mode 100644 azure/shared.parameters.corp-idso-000.json
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:33]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>az --version
+telemetry                          1.0.6
+
+Python location 'C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\python.exe'
+Extensions directory 'C:\Users\backdoor\.azure\cliextensions'
+
+Python (Windows) 3.6.8 (tags/v3.6.8:3c6b436a57, Dec 23 2018, 23:31:17) [MSC v.1916 32 bit (Intel)]
+
+Legal docs and information: aka.ms/AzureCliLegal
+
+
+Your CLI is up-to-date.
+
+Please let us know how we are doing: https://aka.ms/azureclihats
+and let us know if you're interested in trying out our newest features: https://aka.ms/CLIUXstudy
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:34]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Import-Module -Name "Az"
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:35]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:35]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Connect-AzAccount
+WARNING: TenantId 'd3efb988-727d-47ea-adb8-cce6dc17857d' contains more than one active subscription. First one will be selected for further use. To select another subscription, use Set-AzContext.
+
+Account                           SubscriptionName  TenantId                             Environment
+-------                           ----------------  --------                             -----------
+sec1@ididevsecops.onmicrosoft.com sub-prod-idso-000 d3efb988-727d-47ea-adb8-cce6dc17857d AzureCloud
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:35]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Set-AzContext -Name "sub-corp-isdo-000"
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:37]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Set-AzContext -Subscription "sub-corp-isdo-000"
+
+Set-AzContext: Please provide a valid tenant or a valid subscription.
+
+[91mSet-AzContext: [91mPlease provide a valid tenant or a valid subscription.[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:37]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Get-Help Set-AzContext -Examples
+
+NAME
+    Set-AzContext
+
+SYNOPSIS
+    Sets the tenant, subscription, and environment for cmdlets to use in the current session.
+
+
+    ----------- Example 1: Set the subscription context -----------
+
+    PS C:\>Set-AzContext -Subscription "xxxx-xxxx-xxxx-xxxx"
+
+    Name    Account             SubscriptionName    Environment         TenantId
+    ----    -------             ----------------    -----------         --------
+    Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
+
+    This command sets the context to use the specified subscription.
+
+
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:38]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Get-AzSubscription
+
+Name              Id                                   TenantId                             State
+----              --                                   --------                             -----
+sub-prod-idso-000 17ef6ed9-23d0-4229-9fe5-7387c6dee637 d3efb988-727d-47ea-adb8-cce6dc17857d Enabled
+sub-dev-idso-000  32824cab-0279-4368-a5e3-d9921d3d1331 d3efb988-727d-47ea-adb8-cce6dc17857d Enabled
+sub-corp-idso-000 e86f762a-3163-485d-9c0d-2b719751300d d3efb988-727d-47ea-adb8-cce6dc17857d Enabled
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:38]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Get-AzSubscription -SubscriptionName "sub-cor-idso-000"
+
+Get-AzSubscription: Subscription sub-cor-idso-000 was not found in tenant . Please verify that the subscription exists in this tenant.
+
+[91mGet-AzSubscription: [91mSubscription sub-cor-idso-000 was not found in tenant . Please verify that the subscription exists in this tenant.[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:38]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Get-AzSubscription -SubscriptionName "sub-corp-idso-000"
+
+Name              Id                                   TenantId                             State
+----              --                                   --------                             -----
+sub-corp-idso-000 e86f762a-3163-485d-9c0d-2b719751300d d3efb988-727d-47ea-adb8-cce6dc17857d Enabled
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:38]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>Get-AzSubscription -SubscriptionName "sub-corp-idso-000" | Set-AzContext
+
+Name                                     Account               SubscriptionName      Environment           TenantId
+----                                     -------               ----------------      -----------           --------
+sub-corp-idso-000 (e86f762a-3163-485d-9… sec1@ididevsecops.on… sub-corp-idso-000     AzureCloud            d3efb988-727d-47ea-…
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[120G
+[08:39]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:40]
+
+❯
+ ]2;C:\...\ididevsecops\Repo1]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1"
+PS>cd .\azure\
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:40]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>dir
+
+    Directory: C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           1/15/2021  8:31 AM           5017 shared.json
+-a---           1/15/2021  8:30 AM            269 shared.parameters.corp-idso-000.json
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:40]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzureRmResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-xxx" -Verbose
+
+New-AzureRmResourceGroupDeployment: The term 'New-AzureRmResourceGroupDeployment' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+[91mNew-AzureRmResourceGroupDeployment: [91mThe term 'New-AzureRmResourceGroupDeployment' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:43]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-xxx" -Verbose
+VERBOSE: Performing the operation "Creating Deployment" on target "rg-shared-corp-idso-xxx".
+
+New-AzResourceGroupDeployment: 8:43:32 AM - Error: Code=ResourceGroupNotFound; Message=Resource group 'rg-shared-corp-idso-xxx' could not be found.
+
+[91mNew-AzResourceGroupDeployment: [91m8:43:32 AM - Error: Code=ResourceGroupNotFound; Message=Resource group 'rg-shared-corp-idso-xxx' could not be found.
+[0m
+
+New-AzResourceGroupDeployment: The deployment validation failed
+
+[91mNew-AzResourceGroupDeployment: [91mThe deployment validation failed[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:43]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroup -Name "rg-shared-corp-idso-xxx" -Location "eastus"
+
+ResourceGroupName : rg-shared-corp-idso-xxx
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+                    Name          Value
+                    ============  =============
+                    bp-idso       abp-idso
+                    bp-corp-idso  abp-corp-idso
+
+ResourceId        : /subscriptions/e86f762a-3163-485d-9c0d-2b719751300d/resourceGroups/rg-shared-corp-idso-xxx
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:44]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:45]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-xxx" -Verbose
+VERBOSE: Performing the operation "Creating Deployment" on target "rg-shared-corp-idso-xxx".
+VERBOSE: 8:45:42 AM - Template is valid.
+VERBOSE: 8:45:43 AM - Create template deployment 'test'
+VERBOSE: 8:45:43 AM - Checking deployment status in 5 seconds
+VERBOSE: 8:45:48 AM - Resource Microsoft.Storage/storageAccounts 'stsharedcorpidsoxxx' provisioning status is running
+VERBOSE: 8:45:48 AM - Checking deployment status in 15 seconds
+VERBOSE: 8:46:03 AM - Checking deployment status in 5 seconds
+VERBOSE: 8:46:09 AM - Checking deployment status in 5 seconds
+VERBOSE: 8:46:14 AM - Resource Microsoft.Storage/storageAccounts/queueServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:46:14 AM - Resource Microsoft.Storage/storageAccounts/tableServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:46:14 AM - Resource Microsoft.Storage/storageAccounts/blobServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:46:14 AM - Resource Microsoft.Storage/storageAccounts 'stsharedcorpidsoxxx' provisioning status is succeeded
+
+New-AzResourceGroupDeployment: 8:46:14 AM - The deployment 'test' failed with error(s). Showing 1 out of 1 error(s).
+Status Message: XML specified is not syntactically valid.
+RequestId:6c243afd-701a-0029-0644-eb9249000000
+Time:2021-01-15T13:46:15.6598448Z (Code:InvalidXmlDocument)
+
+CorrelationId: 2f2afec5-6a3c-4d58-8483-28e9a8295635
+
+[91mNew-AzResourceGroupDeployment: [91m8:46:14 AM - The deployment 'test' failed with error(s). Showing 1 out of 1 error(s).
+Status Message: XML specified is not syntactically valid.
+RequestId:6c243afd-701a-0029-0644-eb9249000000
+Time:2021-01-15T13:46:15.6598448Z (Code:InvalidXmlDocument)
+
+CorrelationId: 2f2afec5-6a3c-4d58-8483-28e9a8295635[0m
+
+DeploymentName          : test
+ResourceGroupName       : rg-shared-corp-idso-xxx
+ProvisioningState       : Failed
+Timestamp               : 1/15/2021 1:46:15 PM
+Mode                    : Incremental
+TemplateLink            :
+Parameters              :
+                          Name                                        Type                       Value
+                          ==========================================  =========================  ==========
+                          storageAccounts_stsharedcorpidsoxxx_name    String                     stsharedcorpidsoxxx
+
+Outputs                 :
+DeploymentDebugLogLevel :
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:46]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[122G
+[08:47]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>Remove-AzResourceGroup -Name "rg-shared-corp-idso-xxx" -Force -Verbose
+VERBOSE: Performing the operation "Removing resource group ..." on target "rg-shared-corp-idso-xxx".
+True
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:50]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:51]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>Get-AzResourceGroup
+
+ResourceGroupName : rg-shared-corp-idso-000
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+                    Name          Value
+                    ============  =============
+                    bp-idso       abp-idso
+                    bp-corp-idso  abp-corp-idso
+
+ResourceId        : /subscriptions/e86f762a-3163-485d-9c0d-2b719751300d/resourceGroups/rg-shared-corp-idso-000
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:51]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:51]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-xxx" -Verbose
+VERBOSE: Performing the operation "Creating Deployment" on target "rg-shared-corp-idso-xxx".
+
+New-AzResourceGroupDeployment: 8:51:48 AM - Error: Code=ResourceGroupNotFound; Message=Resource group 'rg-shared-corp-idso-xxx' could not be found.
+
+[91mNew-AzResourceGroupDeployment: [91m8:51:48 AM - Error: Code=ResourceGroupNotFound; Message=Resource group 'rg-shared-corp-idso-xxx' could not be found.
+[0m
+
+New-AzResourceGroupDeployment: The deployment validation failed
+
+[91mNew-AzResourceGroupDeployment: [91mThe deployment validation failed[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:51]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroup -Name "rg-shared-corp-idso-xxx" -Location "eastus"
+
+ResourceGroupName : rg-shared-corp-idso-xxx
+Location          : eastus
+ProvisioningState : Succeeded
+Tags              :
+                    Name          Value
+                    ============  =============
+                    bp-idso       abp-idso
+                    bp-corp-idso  abp-corp-idso
+
+ResourceId        : /subscriptions/e86f762a-3163-485d-9c0d-2b719751300d/resourceGroups/rg-shared-corp-idso-xxx
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:51]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-xxx" -Verbose
+VERBOSE: Performing the operation "Creating Deployment" on target "rg-shared-corp-idso-xxx".
+VERBOSE: 8:52:00 AM - Template is valid.
+VERBOSE: 8:52:01 AM - Create template deployment 'test'
+VERBOSE: 8:52:01 AM - Checking deployment status in 5 seconds
+VERBOSE: 8:52:06 AM - Resource Microsoft.Storage/storageAccounts 'stsharedcorpidsoxxx' provisioning status is running
+VERBOSE: 8:52:06 AM - Checking deployment status in 15 seconds
+VERBOSE: 8:52:21 AM - Checking deployment status in 5 seconds
+VERBOSE: 8:52:27 AM - Resource Microsoft.Storage/storageAccounts/blobServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:52:27 AM - Resource Microsoft.Storage/storageAccounts/tableServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:52:27 AM - Resource Microsoft.Storage/storageAccounts/queueServices 'stsharedcorpidsoxxx/default' provisioning status is succeeded
+VERBOSE: 8:52:27 AM - Resource Microsoft.Storage/storageAccounts 'stsharedcorpidsoxxx' provisioning status is succeeded
+
+DeploymentName          : test
+ResourceGroupName       : rg-shared-corp-idso-xxx
+ProvisioningState       : Succeeded
+Timestamp               : 1/15/2021 1:52:27 PM
+Mode                    : Incremental
+TemplateLink            :
+Parameters              :
+                          Name                                        Type                       Value
+                          ==========================================  =========================  ==========
+                          storageAccounts_stsharedcorpidsoxxx_name    String                     stsharedcorpidsoxxx
+
+Outputs                 :
+DeploymentDebugLogLevel :
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[122G
+[08:52]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>cls
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[236G
+[09:01]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-000" -TemplateParameterFile .\shared.parameters.corp-idso-000.json
+
+New-AzResourceGroupDeployment: 1:16:28 PM - Error: Code=InvalidTemplate; Message=Deployment template validation failed: 'The template parameters 'storageAccounts_stsharedcorpidso000_name' in the parameters file are not valid; they are not present in the original template and can therefore not be provided at deployment time. The only supported parameters for this template are 'storageAccounts_stsharedcorpidsoxxx_name'. Please see https://aka.ms/arm-deploy/#parameter-file for usage details.'.
+
+[91mNew-AzResourceGroupDeployment: [91m1:16:28 PM - Error: Code=InvalidTemplate; Message=Deployment template validation failed: 'The template parameters 'storageAccounts_stsharedcorpidso000_name' in the parameters file are not valid; they are not present in the original template and can therefore not be provided at deployment time. The only supported parameters for this template are 'storageAccounts_stsharedcorpidsoxxx_name'. Please see https://aka.ms/arm-deploy/#parameter-file for usage details.'.
+[0m
+
+New-AzResourceGroupDeployment: The deployment validation failed
+
+[91mNew-AzResourceGroupDeployment: [91mThe deployment validation failed[0m
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~0 -0 !
+
+[236G
+[13:16]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>New-AzResourceGroupDeployment -Name "test" -TemplateFile .\shared.json -ResourceGroupName "rg-shared-corp-idso-000" -TemplateParameterFile .\shared.parameters.corp-idso-000.json
+
+New-AzResourceGroupDeployment: 1:17:50 PM - The deployment 'test' failed with error(s). Showing 1 out of 1 error(s).
+Status Message: XML specified is not syntactically valid.
+RequestId:9697a50f-101a-0020-4f6a-ebd9a8000000
+Time:2021-01-15T18:17:48.4434834Z (Code:InvalidXmlDocument)
+
+CorrelationId: 2749d308-db06-4fa9-b0f5-3fdd57153651
+
+[91mNew-AzResourceGroupDeployment: [91m1:17:50 PM - The deployment 'test' failed with error(s). Showing 1 out of 1 error(s).
+Status Message: XML specified is not syntactically valid.
+RequestId:9697a50f-101a-0020-4f6a-ebd9a8000000
+Time:2021-01-15T18:17:48.4434834Z (Code:InvalidXmlDocument)
+
+CorrelationId: 2749d308-db06-4fa9-b0f5-3fdd57153651[0m
+
+DeploymentName          : test
+ResourceGroupName       : rg-shared-corp-idso-000
+ProvisioningState       : Failed
+Timestamp               : 1/15/2021 6:17:51 PM
+Mode                    : Incremental
+TemplateLink            :
+Parameters              :
+                          Name                                        Type                       Value
+                          ==========================================  =========================  ==========
+                          storageAccounts_stsharedcorpidsoxxx_name    String                     stsharedcorpidso000
+
+Outputs                 :
+DeploymentDebugLogLevel :
+
+
+PS>@{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+instanceId                     7a674738-433c-41d8-8e62-9a0f9e83e258
+processId                      11504
+computerName                   CLIENT
+
+
+⨯
+backdoor@CLIENT
+
+~\source\repos\ididevsecops\Repo1\azure
+
+  cloudshell ≢ +1 ~1 -0 !
+
+[236G
+[13:17]
+
+❯
+ ]2;C:\...\Repo1\azure]9;9;"C:\Users\backdoor\source\repos\ididevsecops\Repo1\azure"
+PS>Stop-Transcript
+**********************
+PowerShell transcript end
+End time: 20210115131809
+**********************
