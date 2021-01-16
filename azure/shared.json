@@ -68,7 +68,7 @@
                 }
             }
         },
-        {
+        /* {
             "type": "Microsoft.Storage/storageAccounts/fileServices",
             "apiVersion": "2020-08-01-preview",
             "name": "[concat(parameters('stsharedcorpidsoxxx_name'), '/default')]",
@@ -87,7 +87,7 @@
                     "corsRules": []
                 }
             }
-        },
+        }, */
         {
             "type": "Microsoft.Storage/storageAccounts/queueServices",
             "apiVersion": "2020-08-01-preview",
@@ -113,8 +113,8 @@
                     "corsRules": []
                 }
             }
-        },
-        {
+        }
+        /* , {
             "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
             "apiVersion": "2020-08-01-preview",
             "name": "[concat(parameters('stsharedcorpidsoxxx_name'), '/default/fssharedcorpidsoxxx')]",
@@ -127,6 +127,6 @@
                 "shareQuota": 6,
                 "enabledProtocols": "SMB"
             }
-        }
+        } */
     ]
 }
