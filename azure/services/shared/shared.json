@@ -2,8 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "stsharedcorpidsoxxx_name": {
-            "defaultValue": "stsharedcorpidsoxxx",
+        "stsharedENVidsoxx0_name": {
             "type": "String"
         }
     },
@@ -12,7 +11,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2020-08-01-preview",
-            "name": "[parameters('stsharedcorpidsoxxx_name')]",
+            "name": "[parameters('stsharedENVidsoxx0_name')]",
             "location": "eastus",
             "tags": {
                 "ms-resource-usage": "azure-cloud-shell"
@@ -51,9 +50,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/blobServices",
             "apiVersion": "2020-08-01-preview",
-            "name": "[concat(parameters('stsharedcorpidsoxxx_name'), '/default')]",
+            "name": "[concat(parameters('stsharedENVidsoxx0_name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedcorpidsoxxx_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedENVidsoxx0_name'))]"
             ],
             "sku": {
                 "name": "Standard_LRS",
@@ -71,9 +70,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/queueServices",
             "apiVersion": "2020-08-01-preview",
-            "name": "[concat(parameters('stsharedcorpidsoxxx_name'), '/default')]",
+            "name": "[concat(parameters('stsharedENVidsoxx0_name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedcorpidsoxxx_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedENVidsoxx0_name'))]"
             ],
             "properties": {
                 "cors": {
@@ -84,9 +83,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/tableServices",
             "apiVersion": "2020-08-01-preview",
-            "name": "[concat(parameters('stsharedcorpidsoxxx_name'), '/default')]",
+            "name": "[concat(parameters('stsharedENVidsoxx0_name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedcorpidsoxxx_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('stsharedENVidsoxx0_name'))]"
             ],
             "properties": {
                 "cors": {
