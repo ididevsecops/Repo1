@@ -9,7 +9,6 @@ function root {
     New-Variable -Name "bp" -Scope "Global" -Value "bp-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "bpa" -Scope "Global" -Value "bpa-idso" -Force -Verbose -ErrorAction SilentlyContinue
     Remove-Variable -Name "sub" -Scope "Global" -Force -Verbose -ErrorAction SilentlyContinue
-    Remove-Variable -Name "rg" -Scope "Global" -Force -Verbose -ErrorAction SilentlyContinue
 }
 
 Write-Host "Type 'corp' to set Azure context to corp."
@@ -18,7 +17,6 @@ function corp {
     New-Variable -Name "bp" -Scope "Global" -Value "bp-corp-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "bpa" -Scope "Global" -Value "bpa-corp-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "sub" -Scope "Global" -Value "sub-corp-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
-    New-Variable -Name "rg" -Scope "Global" -Value "rg-shared-corp-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
 }
 
 Write-Host "Type 'dev' to set Azure context to dev."
@@ -27,7 +25,6 @@ function dev {
     New-Variable -Name "bp" -Scope "Global" -Value "bp-dev-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "bpa" -Scope "Global" -Value "bpa-dev-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "sub" -Scope "Global" -Value "sub-dev-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
-    New-Variable -Name "rg" -Scope "Global" -Value "rg-shared-dev-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
 }
 
 Write-Host "Type 'prod' to set Azure context to prod."
@@ -36,5 +33,4 @@ function prod {
     New-Variable -Name "bp" -Scope "Global" -Value "bp-prod-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "bpa" -Scope "Global" -Value "bpa-prod-idso" -Force -Verbose -ErrorAction SilentlyContinue
     New-Variable -Name "sub" -Scope "Global" -Value "sub-prod-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
-    New-Variable -Name "rg" -Scope "Global" -Value "rg-shared-prod-idso-000" -Force -Verbose -ErrorAction SilentlyContinue
 }
