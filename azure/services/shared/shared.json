@@ -17,7 +17,7 @@
                 "ms-resource-usage": "azure-cloud-shell"
             },
             "sku": {
-                "name": "Standard_LRS",
+                "name": "Standard_GRS",
                 "tier": "Standard"
             },
             "kind": "StorageV2",
